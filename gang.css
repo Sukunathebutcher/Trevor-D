@@ -1,0 +1,175 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background: linear-gradient(to right, #2c2c2c, #000);
+}
+
+/* HEADER */
+header {
+  background: rgba(0,0,0,0.8);
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.Primary2 h1 {
+  font-size: 2.5rem;
+}
+
+/* NAV */
+nav a {
+  color: #aaa;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* SPIN BUTTON */
+.spin-btn {
+  margin-top: 20px;
+  padding: 15px 25px;
+  background: turquoise;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  animation: spinRight 4s linear infinite;
+}
+.spin-btn:hover{
+  color: turquoise;
+  background: linear-gradient(to left,turquoise,black);
+}
+
+@keyframes spinRight {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+/* ABOUT FLEX */
+.about-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  gap: 40px;
+}
+
+/* IMAGES */
+.jam {
+  display: flex;
+  gap: 15px;
+}
+
+.jam img {
+  width: 200px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.jam img:hover {
+  transform: scale(1.1);
+}
+
+/* TEXT */
+.about-text {
+  max-width: 400px;
+}
+
+.about-text h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.about-text ul {
+  margin-top: 10px;
+}
+
+.about-text li {
+  margin-bottom: 8px;
+}
+
+/* SERVICES */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-card {
+  background: rgba(255,255,255,0.1);
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right,turquoise,black);
+  color: turquoise;
+}
+
+/* CONTACT */
+.section1 {
+  text-align: center;
+  padding: 50px;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* GALLERY */
+.gallery img {
+  display: none;
+  width: 600px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.gallery img.active {
+  display: block;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.8);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .about-flex {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trevor Daley Portfolio</title>
+
+<link rel="stylesheet" href="s.css">
+</head>
+
+<body>
+
+<!-- HERO / SLIDER SECTION -->
+<section class="slider-section">
+
+    <!-- Background video -->
+    <video autoplay muted loop playsinline>
+        <source src="4K Beautiful Anime Scenery.mp4" type="video/mp4">
+    </video>
+
+    <div class="slider-overlay"></div>
+
+    <!-- Slideshow -->
+    <div class="slider">
+        <div class="slide active"><h2>Welcome to My Portfolio</h2></div>
+        <div class="slide"><h2>Frontend Developer & Problem Solver</h2></div>
+        <div class="slide"><h2>Building Skills. Creating Solutions.</h2></div>
+    </div>
+
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about-section">
+    <div class="bright">
+        <h1>About Me</h1>
+
+        <p>
+            I am a third-year Computer Science student at the University of Nigeria with a strong interest in frontend development and a growing foundation in backend systems. As part of my academic program, I am currently preparing for my Industrial Training (IT), where I aim to gain hands-on experience in a real-world tech environment.
+        </p>
+
+        <p>
+            I am a British citizen actively seeking remote or UK-based internship opportunities, particularly industrial placements that will allow me to apply my skills while continuing to grow as a developer.
+        </p>
+
+        <p>
+            My primary focus is frontend development, where I have an intermediate understanding of HTML, CSS, and JavaScript, enabling me to build responsive and user-friendly interfaces. I also have working knowledge of Python, giving me a solid introduction to backend logic and problem-solving.
+        </p>
+
+        <p>
+            I have gained practical experience working with IPGrupp Tech, a digital agency that develops websites for small businesses. During this time, I worked on building and structuring the foundational HTML, CSS, and JavaScript of projects, supporting senior developers and contributing to real client solutions.
+        </p>
+
+        <p>
+            In addition, I have experience with WordPress, Git/GitHub, and a growing interest in cybersecurity and prompt engineering. I am continuously improving my skills through personal projects, with the goal of becoming a well-rounded and impactful software developer.
+        </p>
+
+        <a href="projects.html" class="btn">View My Projects</a>
+        <a href="T.HTML" class="btn">Home</a>
+    </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section class="skills-section">
+    <h1>My Skills</h1>
+
+    <div class="skills-container">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Python</div>
+        <div class="skill">WordPress</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">Cybersecurity (Basic)</div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+    <h1>Contact Me</h1>
+
+    <p>Email: noahdaley773@gmail.com</p>
+    <p>Phone: 07927 615982</p>
+
+    <a href="Trevor_Daley_CV.pdf" download class="btn">Download CV</a>
+</section>
+
+<!-- SCRIPT -->
+<script>
+let slides = document.querySelectorAll('.slide');
+let index = 0;
+
+setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+}, 3000);
+</script>
+
+</body>
+</html>

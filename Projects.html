@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trevor Daley - Projects</title>
+<link rel="stylesheet" href="projects.css">
+
+<!-- Prism.js for Python syntax highlighting -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-python.min.js"></script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1 class="logo">Trevor Daley</h1>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="T.HTML">Home</a></li>
+            <li><a href="s.html">About</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h2>My Projects</h2>
+    <p>Here are some of my projects demonstrating web development and Python skills.</p>
+</section>
+
+<!-- 1. Portfolio Website -->
+<section class="project-section">
+    <div class="project-card">
+        <img src="Screenshot 2026-03-23 124127.png" alt="Portfolio Screenshot">
+        <h3>Personal Portfolio</h3>
+        <p>A responsive portfolio built with HTML, CSS, and JavaScript showcasing my projects.</p>
+        <a href="s.html" class="btn">View Site</a>
+    </div>
+</section>
+
+<!-- 2. Barber Shop Website -->
+<section class="project-section">
+    <div class="project-card">
+        <img src="Screenshot 2026-03-23 124331.png" alt="Gangbuk Barber Shop Screenshot">
+        <h3>Gangbuk Barber Shop</h3>
+        <p>Website for a barber shop including gallery, services, and a contact form.</p>
+        <a href="gang.html" class="btn">Visit Site</a>
+    </div>
+</section>
+
+<!-- 3. Number Guessing Game (Python) -->
+<section class="project-section">
+    <div class="project-card">
+        <img src="Screenshot 2026-03-23 124503.png" alt="Guessing Game Screenshot">
+        <h3>Number Guessing Game</h3>
+        <p>A Python console game where users guess a random number.</p>
+        <a href="edhd.html" download class="btn">Visit site</a>
+        <h4>Code Snippet:</h4>
+        <pre><code class="language-python">
+import random
+
+number = random.randint(1, 100)
+guess = 0
+
+while guess != number:
+    guess = int(input("Guess the number: "))
+    if guess < number:
+        print("Too low!")
+    elif guess > number:
+        print("Too high!")
+print("Congrats! You guessed it!")
+        </code></pre>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+    <p>Email: noahdaley773@gmail.com</p>
+</footer>
+
+</body>
+</html>
